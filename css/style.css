@@ -2250,7 +2250,7 @@ button:focus {
 /*
  * Large Screens: Center Content and Remove Scroll 
  */
-@media (min-width: 768px) {
+@media (orientation: landscape) {
   .clients_logo_area .clients_slider {
     justify-content: center;
     overflow-x: hidden; /* Disable horizontal scroll */
