@@ -2240,6 +2240,11 @@ button:focus {
   padding: 0px 0px;
 }
 
+.clients_logo_area .clients_slider {
+  display: flex;
+  justify-content: center;
+}
+
 .clients_logo_area .clients_slider .item {
   text-align: center;
 }
