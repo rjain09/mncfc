@@ -2242,7 +2242,8 @@ button:focus {
 
 .clients_logo_area .clients_slider {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  overflow-x: auto;
 }
 
 .clients_logo_area .clients_slider .item {
