@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" type="image/png" href="img/ncfc.png">
+        <title>Mahalanobis National Crop Forecast Centre</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+		<!-- Bootstrap CSS -->
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/icomoon.css">
+        <link rel="stylesheet" href="css/responsive.css">
+		<!-- main css -->
+    </head>
+	<script>
+		function includeHeader() {
+		  var z, i, elmnt, file, xhttp;
+		  /*loop through a collection of all HTML elements:*/
+		  z = document.getElementsByTagName("*");
+		  for (i = 0; i < z.length; i++) {
+			elmnt = z[i];
+			/*search for elements with a certain atrribute:*/
+			file = elmnt.getAttribute("w3-include-html");
+			if (file) {
+			  /*make an HTTP request using the attribute value as the file name:*/
+			  xhttp = new XMLHttpRequest();
+			  xhttp.onreadystatechange = function() {
+				if (this.readyState == 4) {
+				  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+				  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+				  /*remove the attribute, and call this function once more:*/
+				  elmnt.removeAttribute("w3-include-html");
+				  includeHTML();
+				}
+			  }      
+			  xhttp.open("GET", file, true);
+			  xhttp.send();
+			  /*exit the function:*/
+			  return;
+			}
+		  }
+		};
+	</script>
+    <body>
+	<header class="header_area" style="height: 240px;">
+			<div w3-include-html="header.html"></div>
+			<script> includeHeader();</script>
+	</header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="banner_area">
+            <div class="banner_inner d-flex align-items-center">
+            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+				<div class="container">
+					<div class="banner_content text-center">
+						<h2>FASAL</h2>
+						<div class="page_link">
+							<a href="index.html">Home</a>
+							<a href="#"> Projects </a>
+							<a href="fasal.html"> FASAL </a>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        <!--================Welcome Area =================-->
+	<a name="skipCont"></a>
+    <section class="ftco-section bg-light" style="height:200px; padding-top:4em;">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <h2 class="mb-4">Forecasting Agricultural output using Space,<br/> Agro-meteorology and Land based observations</h2>
+          </div>		  
+        </div>
+	</div>
+	</section>
+		<section class="welcome_area p_120">
+        	<div class="container">
+        		<div class="row welcome_inner">
+        			<div class="col-lg-6" style="padding-left:300px; max-width:85%">
+        				<div class="welcome_text">
+        					<h3 class="mb-20 title_color">About FASAL</h3>
+        					<p style="width:1320px; font-weight:500; max-width:1480px">The Mahalanobis National Crop Forecast Centre (MNCFC), under the Ministry of Agriculture and Farmers Welfare's FASAL 
+								program, plays a crucial role in Crop Production Forecasting for India.  Using methodologies developed by the Space Applications Centre (SAC), ISRO, the MNCFC generates crop forecasts 
+								at District, State, and National levels for major crops of the country.  These forecasts rely on both optical and microwave remote sensing data to estimate crop acreage, assess crop condition, 
+								and predict production.</p>
+							<p style="width:1320px; font-weight:500; max-width:1480px">The program covers a wide range of crops, including wheat, rice, mustard, sugarcane, jute, rabi sorghum, cotton, soybean, tur, gram, and lentil, for which crop maps and acreage 
+								statistics are produced.Recently, the center has also started generating a Crop Health Factor for wheat and paddy.</p>
+							<p style="width:1320px; font-weight:500; max-width:1480px"> MNCFC collaborates with ISRO and IARI (ICAR) for operational yield estimates using semi-physical and crop simulation models. Since Kharif 2024-25, private agencies have also been involved 
+								for providing Crop acreage and maps for Cotton, Tur, Soybean, Gram, Mustard and Lentil along with Ground Truth data </p>
+							<p style="width:1320px; font-weight:500; max-width:1480px">Since Kharif 2024-25, KrishiMapper App developed by the department is being used for collecting polygon based Ground Truth data. Around 
+									90000+ in Kharif 2024-25 and 100000+ in Rabi 2024-25, Ground Truth surveys have been conducted which have been used for Crop Mapping</p>
+						
+						</div>
+						<center><img src="img/projects/cropmapping.png" style="width:90%; height:90%;position: relative; top: 5px; left: 0px" ></center>
+						<center><img src="img/projects/cropyield.png" style="width:90%; height:90%;position: relative; top: 5px; left: 0px" ></center>
+						<center><img src="img/projects/GTMap.jpg" style="width:80%; height:80%;position: relative; top: 5px; left: 0px" ></center>
+							<!--
+							<div class="">
+								<ul class="unordered-list" style="width:1080px;">
+									<li style="font-weight:500;">National/State/District level crop production forecasts were generated using multi-date AWiFS NDVI product/LISS-III/Sentinel 2/ Landsat-8 and multi date Sentinel 1A SAR data for acreage estimation and estimation of crop yield, using multiple approaches, i) semi-physical remote sensing based model ii) Remote Sensing index based yield models iii) correlation weighted district level Agromet model of IMD iv) Crop simulation model by IMD and v) data obtained from crop cutting experiments.</li>
+									<li style="font-weight:500;">Around 490 Sentinel 1A SAR scenes were processed and analyzed for Paddy(Kharif).</li>
+									<li style="font-weight:500;">Collaboration with State Agriculture Department and State Remote Sensing Centers to carry out the data analysis, crop cutting experiment and ground truth data collection.</li>
+									<center><img width=800px height=700px src="img/projects/fasal2.jpg" style="position: relative; top: 5px; left: 0px"><br/>
+										<img width=800px height=350px src="img/projects/fasal3.jpg" style="position: relative; top: 5px; left: 0px">
+									</center>
+									<li style="font-weight:500;">11469 ground truth points were collected by state agriculture departments using Smartphones during Kharif and Rabi season 2017-18.</li>
+									<li style="font-weight:500;">Generation of Remote Sensing based CCE (Crop cutting experiment) plan for conducting CCE. Around 708 CCE points were collected in 12 states in 2017-18.</li>
+									<li style="font-weight:500;">First time Sentinel 1 C band SAR data (Spatial Resolution 20m, Temporal Resolution 12 days, VV polarization mode) was used for Kharif Rice (2017-18) area estimation.</li>
+									<li style="font-weight:500;">FASAL annual review meeting was conducted on 24th May 2018, under the chairmanship of Principal Adviser, DAC&FW.</li>
+									<li style="font-weight:500;">Transfer of operational approach of yield model by IMD to MNCFC.</li>
+								</ul>
+							</div>
+							<div class="section-top-border">
+								<h3 class="mb-30 title_color"></h3>
+								<div class="progress-table-wrap">
+									<div class="progress-table" style="background-color:#d8dcda; padding-left:16px;font-weight: 400; color: #000;">
+										<div class="table-head">
+										<div class="percentage">Crop</div>
+										<div class="country">No. of States</div>
+										<div class="country">Forecast</div>
+										<div class="percentage">Satellite Data</div>
+										<div class="country">Forecast Month</div>
+									</div>
+									<div class="table-row">
+										<div class="percentage">Jute</div>
+										<div class="country">3</div>
+										<div class="country">F1</div>
+										<div class="percentage">AWiFS / LISS III / Landsat 8 / Sentinel 2</div>										
+										<div class="country">July</div>
+									</div>
+									<div class="table-row">
+										<div class="percentage">Kharif Rice</div>
+										<div class="country">14</div>
+										<div class="country">F1<br/> F2<br/> F3</div>
+										<div class="percentage">Sentinel 1A SAR</div>										
+										<div class="country">September<br/> October<br/> February</div>
+									</div>
+									<div class="table-row">
+										<div class="percentage">Sugarcane</div>
+										<div class="country">6</div>
+										<div class="country">F1<br/> F2</div>
+										<div class="percentage">AWiFS / LISS III / Landsat 8 / Sentinel 2</div>										
+										<div class="country">July<br/> December</div>
+									</div>
+									<div class="table-row">
+										<div class="percentage">Cotton</div>
+										<div class="country">9</div>
+										<div class="country">F1<br/> F2</div>
+										<div class="percentage">AWiFS / LISS III / Landsat 8 / Sentinel 2</div>										
+										<div class="country">November<br/> December</div>
+									</div>
+									<div class="table-row">
+										<div class="percentage">Rabi Sorghum</div>
+										<div class="country">2</div>
+										<div class="country">F1</div>
+										<div class="percentage">LISS III / Landsat 8 / Sentinel 2</div>										
+										<div class="country">February</div>
+									</div>
+									<div class="table-row">
+										<div class="percentage">Rapeseed & Mustard</div>
+										<div class="country">6</div>
+										<div class="country">F1<br/> F2<br/> F3</div>
+										<div class="percentage">AWiFS / LISS III / Landsat 8 / Sentinel 2</div>										
+										<div class="country">December<br/> January<br/> February</div>
+									</div>
+									<div class="table-row">
+										<div class="percentage">Wheat</div>
+										<div class="country">9</div>
+										<div class="country">F1<br/> F2<br/> F3</div>
+										<div class="percentage">AWiFS / LISS III / Landsat 8 / Sentinel 2</div>										
+										<div class="country">January<br/> February <br/>March </div>
+									</div>
+									<div class="table-row">
+										<div class="percentage">Rabi Pulses</div>
+										<div class="country">6</div>
+										<div class="country">F1<br/> F2</div>
+										<div class="percentage">AWiFS / LISS III / Landsat 8 / Sentinel 2</div>										
+										<div class="country">April<br/> May </div>
+									</div>
+									<div class="table-row">
+										<div class="percentage">Rabi Rice</div>
+										<div class="country">5</div>
+										<div class="country">F1</div>
+										<div class="percentage">Landsat 8 / Sentinel 1 & 2</div>										
+										<div class="country">April</div>
+									</div>
+							</div> -->
+						</div>
+					</div>
+        			</div>
+        		</div> 
+        	</div> 
+			<!--<center><a href="project_documents.html" class="genric-btn primary circle arrow">Click here for Project related Documents<span class="lnr lnr-arrow-down"></span></a></center>-->
+        </section>
+        			
+	        <!--================Feature Area =================-->
+      <!--  <section class="feature_area p_120">
+        	<div class="overlay bg-parallax" data-stellar-ratio="0.2" data-stellar-vertical-offset="0" data-background="" style="background:url(img/feature-bg2.jpg); opacity: 0.6;"></div>
+        	<div class="container">
+        		<div class="white_title"></div>
+        		<div class="row feature_inner">
+        			<div class="col-lg-4">
+        				<div class="feature_item">
+        					<i class="lnr lnr-leaf"></i>
+        					<h4><a class="main_btn" href="about_fasal.html">About FASAL</a></h4>
+        					<p></p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4">
+        				<div class="feature_item">
+        					<i class="lnr lnr-rocket"></i>
+        					<h4><a class="main_btn" href="srsc_fasal.html">State Remote Sensing Centres</a></h4>
+        					<p></p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4">
+        				<div class="feature_item">
+        					<i class="lnr lnr-menu-circle"></i>
+        					<h4><a class="main_btn" href="sad_fasal.html">State Agriculture Departments</a></h4>
+        					<p></p>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>-->
+        <!--================End Feature Area =================-->
+		<!--================Digital India Area =================-->
+        <section class="clients_logo_area">
+        	<div class="container">
+        		<div class="clients_slider owl-carousel">
+        			<div class="item"><a href="https://digitizeindia.gov.in/" target="_BLANK" title="External site that opens in a new window">
+        				<img src="img/digitalindia/digital-india.png" alt=""></a>
+        			</div>
+        			<div class="item"><a href="https://www.mygov.in/" target="_BLANK" title="External site that opens in a new window">
+        				<img src="img/digitalindia/mygov.png" alt=""></a>
+        			</div>
+        			<div class="item"><a href="https://www.india.gov.in/" target="_BLANK" title="External site that opens in a new window">
+        				<img src="img/digitalindia/india-gov.png" alt=""></a>
+        			</div>
+        			<div class="item"><a href="http://www.makeinindia.com/home" target="_BLANK" title="External site that opens in a new window">
+        				<img src="img/digitalindia/makeinindia.png" alt=""></a>
+        			</div>
+					<div class="item"><a href="http://data.gov.in " target="_BLANK" title="External site that opens in a new window">
+        				<img src="img/digitalindia/data-gov.png" alt=""></a>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+		</section>
+        <!--================End Digital India Area =================-->
+        <!--================ start footer Area  =================-->	
+        <footer class="footer-area section_gap">
+            <div class="container" style="width:1420px;">
+                <div class="row">
+                    <div class="col-lg-31 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6 class="footer_title">Navigation Links</h6>
+                            <div class="row">
+                                <div class="col-4">
+                                    <ul class="list">
+                                        <li><a href="about-us.html">About MNCFC</a></li>
+                                        <li><a href="http://14.139.50.199:8080/ncfc/download.html" target="_blank">Indices Data</a></li>
+                                        <li><a href="maps.html">Maps</a></li>
+                                        <li><a href="publications.html">Publications</a></li>
+										<li><a href="newsletter.html">Newsletter</a></li>
+										<li><a href="mncfc-staff.html">MNCFC Staff</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <ul class="list">
+                                        <li><a href="fasal.html">FASAL</a></li>
+                                        <li><a href="chaman.html">CHAMAN</a></li>
+                                        <li><a href="nadams.html">NADAMS</a></li>
+										<li><a href="kisan.html">KISAN</a></li>
+                                        <li><a href="crop-int.html">Crop Intensification</a></li>
+										<li><a href="http://14.139.50.204:90/pilotstudy/index.php" target="_blank">PMFBY Pilot Studies</a></li>
+                                    </ul>
+                                </div>	
+								<div class="col-4">
+                                    <ul class="list">
+                                        <li><a href="vacancies.html">Vacancies</a></li>
+                                        <li><a href="tenders.html">Tenders</a></li>
+                                        <li><a href="events.html">Events</a></li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>
+										<li><a href="rti.html">RTI</a></li>
+                                    </ul>
+                                </div>								
+                            </div>							
+                        </div>
+                    </div>							
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6 class="footer_title">Policy Links</h6>
+                                    <ul class="list">
+                                        <li><a href="copyright.html">Copyright Policy</a></li>
+                                        <li><a href="hyperlink.html">Hyperlinking Policy</a></li>
+                                        <li><a href="privacy.html">Privacy Policy</a></li>
+                                        <li><a href="conditions.html">Terms and Condition</a></li>
+                                    </ul>
+                        </div>
+                    </div>
+					<div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <div class="foot-contact">
+                            <h2>Contact</h2>
+
+                            <ul style="padding-left:1px;">
+                                <li><i class="fa fa-phone"></i><span>+91 11 25843224</span></li>
+                                <li><i class="fa fa-envelope"></i><span>ncfc[at]gov[dot]in</span></li>
+                                <li><i class="fa fa-map-marker"></i><span>Near Krishi Vistar Sadan, Pusa Campus, New Delhi-110012, India</span></li>
+                            </ul>
+                        </div><!-- .foot-contact -->
+                    </div>
+                </div>
+                <div class="border_line"></div>
+                <div class="row footer-bottom d-flex justify-content-between align-items-center" style="padding-top: 6px;">
+                    <p class="col-lg-8 col-md-8 footer-text m-0">
+						Copyright &copy; <script>document.write(new Date().getFullYear());</script> Mahalanobis National Crop Forecast Centre, All rights reserved.
+					</p>
+                    <div class="col-lg-4 col-md-4 footer-social">
+                        <a href="http://facebook.com/ncfcdac"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/mncfcdac"><i class="fa fa-twitter"></i></a>
+					</div>
+				</div>
+        </footer>
+		<!--================ End footer Area  =================-->
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope-min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/theme.js"></script>
+    </body>
+</html>

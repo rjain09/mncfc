@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" type="image/png" href="img/ncfc.png">
+        <title>Mahalanobis National Crop Forecast Centre</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+		<!-- Bootstrap CSS -->
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+		<!-- main css -->
+    </head>
+	<script>
+		function includeHeader() {
+		  var z, i, elmnt, file, xhttp;
+		  /*loop through a collection of all HTML elements:*/
+		  z = document.getElementsByTagName("*");
+		  for (i = 0; i < z.length; i++) {
+			elmnt = z[i];
+			/*search for elements with a certain atrribute:*/
+			file = elmnt.getAttribute("w3-include-html");
+			if (file) {
+			  /*make an HTTP request using the attribute value as the file name:*/
+			  xhttp = new XMLHttpRequest();
+			  xhttp.onreadystatechange = function() {
+				if (this.readyState == 4) {
+				  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+				  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+				  /*remove the attribute, and call this function once more:*/
+				  elmnt.removeAttribute("w3-include-html");
+				  includeHTML();
+				}
+			  }      
+			  xhttp.open("GET", file, true);
+			  xhttp.send();
+			  /*exit the function:*/
+			  return;
+			}
+		  }
+		};
+	</script>
+    <body>
+	<header class="header_area" style="height: 240px;">
+			<div w3-include-html="header.html"></div>
+			<script> includeHeader();</script>
+	</header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="banner_area">
+            <div class="banner_inner d-flex align-items-center">
+            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+				<div class="container">
+					<div class="banner_content text-center">
+						<h2>Support to PMFBY</h2>
+						<div class="page_link">
+							<a href="index.html">Home</a>
+							<a href="#">Projects</a>
+							<a href="pmfby.html">Support to PMFBY</a>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        <!--================Welcome Area =================-->
+		<a name="skipCont"></a>
+        <section class="welcome_area p_120">
+        	<div class="container">
+        		<div class="row welcome_inner">
+        			<div class="col-lg-6" style="padding-left:300px; max-width:85%">
+        				<div class="welcome_text">
+        					<h3 class="mb-20 title_color">Support to Pradhan Mantri Fasal Bima Yojana</h3>							
+							<div class="">
+								<ul class="unordered-list" style="width:1080px;">
+									<li style="font-weight:500;">Remote sensing based Smart Sampling of Crop Cutting Experiment locations.</li>
+									<li style="font-weight:500;">Technology support to re-solve various issues of Area Discrepancy, Yield Disputes, Prevented/Failed Sowing, Loss characterization, etc.</li>
+									<li style="font-weight:500;">Coordinating pilot studies for various technology implementation.</li>
+									<li style="font-weight:500;">Supporting the National Programme i.e YESTECH, WINDS & CROPIC.</li>
+									
+								<!--<div class="section-top-border">
+								<h3 class="mb-30 title_color"></h3>
+								<div class="progress-table-wrap">
+									<div class="progress-table" style="background-color:#d8dcda; padding-left:16px;font-weight: 400; color: #000;">
+										<div class="table-head">
+											<div class="percentage">Indices</div>
+											<div class="country">Data Used</div>
+											<div class="country">Level</div>
+											<div class="percentage">States</div>
+										</div>
+									<div class="table-row">
+										<div class="percentage">NDVI/ NDWI</div>
+										<div class="country">MODIS/ AWIFS</div>
+										<div class="country">District Wise</div>
+										<div class="percentage">23 states<br/>Andhra Pradesh, Assam, Bihar, Chhattisgarh, Gujarat, Haryana, Himachal Pradesh, Jammu & Kashmir, Jharkhand, Karnataka, Kerala, Madhya Pradesh, Maharashtra, Odisha, Punjab, Rajasthan, Sikkim, Tamil Nadu, Telangana, Tripura, Uttar Pradesh, Uttarakhand, and West Bengal</div>										
+									</div>
+									<div class="table-row">
+										<div class="percentage">NDVI/ NDWI</div>
+										<div class="country">MODIS/ AWIFS</div>
+										<div class="country">Block Level</div>
+										<div class="percentage">14 states<br/>Andhra Pradesh, Bihar, Chhattisgarh, Gujarat, Haryana, Jharkhand, Karnataka, Madhya Pradesh, Maharashtra, Odisha, Rajasthan, Tamil Nadu, Telangana and Uttar Pradesh</div>										
+									</div>
+									<div class="table-row">
+										<div class="percentage">MAI</div>
+										<div class="country">Using soil moisture model</div>
+										<div class="country">District wise</div>
+										<div class="percentage">17 states<br/>Andhra Pradesh, Assam, Bihar, Chhattisgarh, Gujarat, Haryana, Jharkhand, Karnataka, Madhya Pradesh, Maharashtra, Odisha, Punjab, Rajasthan, Tamil Nadu, Telangana, Uttar Pradesh and West Bengal</div>										
+									</div>
+									<div class="table-row">
+										<div class="percentage">Dry Spell</div>
+										<div class="country">IMD Rainfall Data</div>
+										<div class="country">District wise</div>
+										<div class="percentage">Above 23 States</div>										
+									</div>	
+									<div class="table-row">
+										<div class="percentage">SPI</div>
+										<div class="country">NOAA CPC Rainfall</div>
+										<div class="country">District wise</div>
+										<div class="percentage">Above 23 States</div>										
+									</div>									
+							</div>
+						</div>
+					</div><br/>-->
+					<!--<h3 class="mb-20 title_color">Drought Assessment</h3>	<br/>-->
+					<br/><br/>
+					<img src="img/projects/pmfby_1.jpg" style="width:80%; height:80%;position: relative; top: 5px; left: 0px" ><br/><br/><br/>
+					<!--
+									<li style="font-weight:500;">Drought related Indices data download portal MNCFC,DAC&FW <a style= 'color: black;' href="http://14.139.50.199/ncfc/download.html" target="_blank"> Click to view Data.</a></li><br/>
+									<center><a href="http://14.139.50.199/ncfc/download.html" target="_blank"><img src="img/projects/nadams1.jpg" style="width:120%; height:90%;position: relative; top: 5px; left: 0px" ></a></center><br/><br/>
+									<center><a href="http://14.139.50.199/ncfc/download.html" target="_blank"><img src="img/projects/nadams2.jpg" style="width:120%; height:90%;position: relative; top: 5px; left: 0px" ></center><br/><br/>
+									-->
+								</ul>
+							</div>
+
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================Testimonials Area =================-->
+        <section class="testimonials_area p_120">
+        <!--================Digital India Area =================-->
+        <section class="clients_logo_area">
+        	<div class="container">
+        		<div class="clients_slider owl-carousel">
+        			<div class="item"><a href="https://digitizeindia.gov.in/" target="_BLANK" title="External site that opens in a new window">
+        				<img src="img/digitalindia/digital-india.png" alt=""></a>
+        			</div>
+        			<div class="item"><a href="https://www.mygov.in/" target="_BLANK" title="External site that opens in a new window">
+        				<img src="img/digitalindia/mygov.png" alt=""></a>
+        			</div>
+        			<div class="item"><a href="https://www.india.gov.in/" target="_BLANK" title="External site that opens in a new window">
+        				<img src="img/digitalindia/india-gov.png" alt=""></a>
+        			</div>
+        			<div class="item"><a href="http://www.makeinindia.com/home" target="_BLANK" title="External site that opens in a new window">
+        				<img src="img/digitalindia/makeinindia.png" alt=""></a>
+        			</div>
+					<div class="item"><a href="http://data.gov.in " target="_BLANK" title="External site that opens in a new window">
+        				<img src="img/digitalindia/data-gov.png" alt=""></a>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+		</section>
+        <!--================End Digital India Area =================-->
+        <!--================ start footer Area  =================-->	
+        <footer class="footer-area section_gap">
+            <div class="container" style="width:1420px;">
+                <div class="row">
+                    <div class="col-lg-31 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6 class="footer_title">Navigation Links</h6>
+                            <div class="row">
+                                <div class="col-4">
+                                    <ul class="list">
+                                        <li><a href="about-us.html">About MNCFC</a></li>
+                                        <!--<li><a href="http://14.139.50.199:8080/ncfc/download.html" target="_blank">Indices Data</a></li>-->
+                                        <li><a href="maps.html">Maps</a></li>
+                                        <li><a href="publications.html">Publications</a></li>
+										<li><a href="newsletter.html">Newsletter</a></li>
+										<li><a href="mncfc-staff.html">MNCFC Staff</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <ul class="list">
+                                        <li><a href="fasal.html">FASAL</a></li>
+                                        <!--<li><a href="chaman.html">CHAMAN</a></li>-->
+                                        <li><a href="nadams.html">NADAMS</a></li>
+										<!--<li><a href="kisan.html">KISAN</a></li>
+                                        <li><a href="crop-int.html">Crop Intensification</a></li>
+										<li><a href="http://14.139.50.204:90/pilotstudy/index.php" target="_blank">PMFBY Pilot Studies</a></li>-->
+                                    </ul>
+                                </div>	
+								<div class="col-4">
+                                    <ul class="list">
+                                        <li><a href="vacancies.html">Vacancies</a></li>
+                                        <li><a href="tenders.html">Tenders</a></li>
+                                        <li><a href="events.html">Events</a></li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>
+										<li><a href="rti.html">RTI</a></li>
+                                    </ul>
+                                </div>								
+                            </div>							
+                        </div>
+                    </div>							
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6 class="footer_title">Policy Links</h6>
+                                    <ul class="list">
+                                        <li><a href="copyright.html">Copyright Policy</a></li>
+                                        <li><a href="hyperlink.html">Hyperlinking Policy</a></li>
+                                        <li><a href="privacy.html">Privacy Policy</a></li>
+                                        <li><a href="conditions.html">Terms and Condition</a></li>
+                                    </ul>
+                        </div>
+                    </div>
+					<div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <div class="foot-contact">
+                            <h2>Contact</h2>
+
+                            <ul style="padding-left:1px;">
+                                <li><i class="fa fa-phone"></i><span>+91 11 25843224</span></li>
+                                <li><i class="fa fa-envelope"></i><span>ncfc[at]gov[dot]in</span></li>
+                                <li><i class="fa fa-map-marker"></i><span>Near Krishi Vistar Sadan, Pusa Campus, New Delhi-110012, India</span></li>
+                            </ul>
+                        </div><!-- .foot-contact -->
+                    </div>
+                </div>
+                <div class="border_line"></div>
+                <div class="row footer-bottom d-flex justify-content-between align-items-center" style="padding-top: 6px;">
+                    <p class="col-lg-8 col-md-8 footer-text m-0">
+						Copyright &copy; <script>document.write(new Date().getFullYear());</script> Mahalanobis National Crop Forecast Centre, All rights reserved.
+					</p>
+                    <div class="col-lg-4 col-md-4 footer-social">
+                        <a href="http://facebook.com/ncfcdac"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/mncfcdac"><i class="fa fa-twitter"></i></a>
+					</div>
+				</div>
+        </footer>
+		<!--================ End footer Area  =================-->
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope-min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/theme.js"></script>
+    </body>
+</html>
