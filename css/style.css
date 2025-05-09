@@ -2244,7 +2244,18 @@ button:focus {
   display: flex;
   flex-direction: row;
   overflow-x: auto;
+  scroll-behavior: smooth;
 }
+
+/*
+ * Large Screens: Center Content and Remove Scroll 
+ */
+ @media (min-width: 768px) {
+  .clients_logo_area.clients_slider {
+    justify-content: center;
+    overflow-x: hidden; /* Disable horizontal scroll */
+  }
+ }
 
 .clients_logo_area .clients_slider .item {
   text-align: center;
