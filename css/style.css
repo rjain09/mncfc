@@ -467,10 +467,19 @@ button:focus {
   z-index: -1;
 }
 
+/*
+ * It targets a specific HTML element using a chain of class
+ * selectors and sets its text color.
+ */
 .home_banner_area .banner_inner .banner_content {
   color: #fff;
 }
 
+/*
+ * Styling all <h5> elements that are nested inside an element
+ * with class banner_content, which is inside banner_inner,
+ * which in turn is inside home_banner_area.
+ */
 .home_banner_area .banner_inner .banner_content h5 {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
@@ -479,6 +488,11 @@ button:focus {
   margin-bottom: 15px;
 }
 
+/*
+ * Styling all <h3> elements that are nested inside an element
+ * with class banner_content, which is inside banner_inner,
+ * which in turn is inside home_banner_area.
+ */
 .home_banner_area .banner_inner .banner_content h3 {
   font-size: 48px;
   font-family: "Poppins", sans-serif;
@@ -486,6 +500,11 @@ button:focus {
   margin-bottom: 20px;
 }
 
+/*
+ * Styling all p elements that are nested inside an element
+ * with class banner_content, which is inside banner_inner,
+ * which in turn is inside home_banner_area.
+ */
 .home_banner_area .banner_inner .banner_content p {
   font-size: 14px;
   line-height: 24px;
@@ -494,6 +513,11 @@ button:focus {
   margin-bottom: 25px;
 }
 
+/*
+ * Styling white buttons that are nested inside an element
+ * with class banner_content, which is inside banner_inner,
+ * which in turn is inside home_banner_area.
+ */
 .home_banner_area .banner_inner .banner_content .white_btn {
   margin-left: 6px;
 }
@@ -566,6 +590,11 @@ button:focus {
   opacity: .25;
 }
 
+
+/*
+ * Styling all h2 elements that are nested inside an element
+ * with class banner_inner which is inside home_banner_area.
+ */
 .banner_area .banner_inner .banner_content h2 {
   font-weight: bold;
   color: #fff;
@@ -575,6 +604,13 @@ button:focus {
   padding-top: 10px;
 }
 
+
+/*
+ * Styling all a elements that are nested inside an element
+ * with class page_link, which is inside banner_content,
+ * which is inside banner_inner, which in turn is inside
+ * banner_area.
+ */
 .banner_area .banner_inner .banner_content .page_link a {
   font-size: 14px;
   color: #fff;
@@ -583,6 +619,10 @@ button:focus {
   position: relative;
 }
 
+/*
+ * Adds an icon or symbol before every <a> link inside
+ * .page_link, which is nested in .banner_content, etc.
+ */
 .banner_area .banner_inner .banner_content .page_link a:before {
   content: "\e87a";
   font-family: 'Linearicons-Free';
@@ -594,14 +634,29 @@ button:focus {
   transform: translateY(-50%);
 }
 
+/*
+ * Select the last link (<a>) in the breadcrumb-style
+ * .page_link section, and remove any extra space (right
+ * margin) from it.
+ */
 .banner_area .banner_inner .banner_content .page_link a:last-child {
   margin-right: 0px;
 }
 
+/*
+ * Targets the last link (<a>) inside a breadcrumb navigation
+ * and hides the separator that typically appears before it.
+ */
 .banner_area .banner_inner .banner_content .page_link a:last-child:before {
   display: none;
 }
 
+/*
+ * When you move your mouse over a link inside .page_link,
+ * which is inside .banner_content inside .banner_inner inside
+ * .banner_area, the link’s text color changes to pinkish-red
+ * (#ea2c58).
+ */
 .banner_area .banner_inner .banner_content .page_link a:hover {
   color: #ea2c58;
 }
