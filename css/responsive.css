@@ -239,6 +239,7 @@
 	============================================================================================ */
 	.footer-bottom{
 		text-align: center;
+		padding-bottom: 300px;	/* To prevent text overflow in footer in small devices */
 	}
 	.footer-bottom .footer-social {
 		text-align: center;
